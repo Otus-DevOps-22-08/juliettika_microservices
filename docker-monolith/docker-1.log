@@ -1,0 +1,8 @@
+REPOSITORY                 TAG       IMAGE ID       CREATED          SIZE
+julia/ubuntu-tmp-file   latest    732c2cabb984   11 minutes ago   63.1MB
+nginx                      latest    88736fe82739   8 days ago       142MB
+ubuntu                     18.04     71eaf13299f4   4 weeks ago      63.1MB
+hello-world                latest    feb5d9fea6a5   14 months ago    13.3kB
+
+Образ - это неизменяемый слепок ОС, на основе которой создается контейнер.
+Контейнер в свою очередь является виртуальной средой выполнения, имеющий в своей основе образ и дополнительные слои
