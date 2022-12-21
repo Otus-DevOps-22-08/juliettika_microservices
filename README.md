@@ -15,3 +15,14 @@ juliettika microservices repository
 2. С помощью hadolint исправили ошибки в dockerfile
 3. Запустили микросервисное приложение, проверили его работу
 4. Оптимизировали docker-образы, добавили docker volume, проверили, что после перезапуска контейнеров пост остался на месте
+
+## Docker 4
+1. Разобрались с работой сети в Docker
+2. Установить docker-compose на локальную машину
+3. Собрать образы приложения reddit с помощью docker-compose
+4. Запустить приложение reddit с помощью docker-compose
+
+### Базовое имя проекта:
+
+- Как образуется базовое имя проекта? ```<docker_compose_folder>_<service_name>_<incrementing_number_of_containers_with_same_name>```
+- Как можно его задать? ```Установить свойство container_name для любого из контейнеров```
