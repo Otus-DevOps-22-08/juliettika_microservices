@@ -26,3 +26,9 @@ juliettika microservices repository
 
 - Как образуется базовое имя проекта? ```<docker_compose_folder>_<service_name>_<incrementing_number_of_containers_with_same_name>```
 - Как можно его задать? ```Установить свойство container_name для любого из контейнеров```
+
+## Monitoring 1
+```https://hub.docker.com/u/juliettika```
+1. Запустили и протестировали Prometheus, познакомились с Web UI
+2. Настроили мониторинг состояния микросервисов
+3. Собрали метрики хоста с использованием экспортера
