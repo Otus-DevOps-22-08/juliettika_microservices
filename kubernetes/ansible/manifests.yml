@@ -1,0 +1,26 @@
+- hosts: masters
+  become: yes
+  gather_facts: false
+
+  vars:
+    obj_def_path: ~/reddit
+    obj_def_list:
+      - mongo-deployment.yml
+      - post-deployment.yml
+      - comment-deployment.yml
+      - ui-deployment.ym
+
+  tasks:
+    - name: copy manifests
+      copy:
+        src: ../reddit
+        dest: /home/ubuntu/
+        owner: ubuntu
+        mode: 0755
+
+    - name: apply manifests
+      k8s:
+        state: present
+        src: "{{ obj_def_path }}/{{ item }}"
+        apply: true
+      loop: "{{ obj_def_list }}"
